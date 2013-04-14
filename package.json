@@ -1,0 +1,17 @@
+{
+  "name": "webroo.org",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Matt Sweetman",
+    "url": "http://webroo.org"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-stylus": "~0.5.0"
+  }
+}
