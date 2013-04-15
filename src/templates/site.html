@@ -2,10 +2,47 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>{% block title %}Matt Sweetman | {{ title }}{% endblock %}</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <title>{% block title %}Matt Sweetman{% endblock %}</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    {% block bodyContent %}{{content|raw}}{% endblock %}
+    <header>
+      <h1>Matt Sweetman</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Experiments</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <section id="content">
+        {% block bodyContent %}{{content|raw}}{% endblock %}
+      </section>
+      <aside id="side">
+        <nav>
+          <h2>Recent posts</h2>
+          <ol>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Cras vel cursus quam</a></li>
+            <li><a href="#">Phasellus eget dui</a></li>
+            <li><a href="#">Class aptent taciti sociosqu ad litora</a></li>
+            <li><a href="#">Quisque mattis placerat erat</a></li>
+            <li><a href="#">Archive...</a></li>
+          </ol>
+        </nav>
+        <nav>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">matt@webroo.org</a></li>
+            <li><a href="#">github.com/webroo</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <footer>Copyright © Matt Sweetman</footer>
   </body>
 </html>
