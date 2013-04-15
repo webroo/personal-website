@@ -26,9 +26,13 @@ a {
   }
 }
 
+html {
+  min-width: 1024px;
+}
+
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  width: 960px;
+  width: 950px;
   margin: 0 auto;
 }
 
@@ -42,8 +46,7 @@ header {
   nav {
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    line-height: 42px;
     margin-top: 20px;
 
     li {
@@ -63,7 +66,6 @@ header {
 #main {
   clearfix();
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 #content {
@@ -77,11 +79,16 @@ header {
   p {
     margin-top: 22px;
   }
+
+  img {
+    max-width: @width;
+    padding-top: 5px;
+  }
 }
 
 #side {
   float: right;
-  width: 270px;
+  width: 260px;
   padding-top: 18px;
 
   nav {
@@ -99,6 +106,7 @@ header {
 }
 
 footer {
+  margin-top: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid #eaeaea;
