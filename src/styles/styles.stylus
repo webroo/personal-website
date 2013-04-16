@@ -3,6 +3,17 @@
 global-reset();
 reset-html5();
 
+html {
+  min-width: 1024px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  width: 950px;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
 }
@@ -24,16 +35,6 @@ a {
   &:hover {
     color: #ff3399;
   }
-}
-
-html {
-  min-width: 1024px;
-}
-
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  width: 950px;
-  margin: 0 auto;
 }
 
 header {
@@ -88,19 +89,20 @@ header {
 
 #side {
   float: right;
-  width: 260px;
+  width: 255px;
   padding-top: 18px;
 
   nav {
     margin-bottom: 50px;
 
     h2 {
-      margin-bottom: 28px;
+      margin-bottom: 27px;
     }
 
     li {
-      margin-top: 10px;
-      font-size: 14px;
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 18px;
     }
   }
 }
