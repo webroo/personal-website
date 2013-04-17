@@ -3,13 +3,13 @@
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=1024">
-    <title>{% block title %}Matt Sweetman{% endblock %}</title>
+    <title>Matt Sweetman{% if page.path !== '/' %} | {{title}}{% endif %}</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis">
     <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
     <header>
-      <h1>Matt Sweetman</h1>
+      <h1>{{title}}</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>

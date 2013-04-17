@@ -1,7 +1,7 @@
 {
   "template": "site.html",
   "templateData": {
-    "title": "Blog",
+    "title": "Matt Sweetman",
     "content": "index.md"
   }
 }
