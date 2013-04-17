@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   width: 950px;
   margin: 0 auto;
 }
@@ -18,15 +18,9 @@ h1 {
   font-family: Dosis, Helvetica, Arial, sans-serif;
 }
 
-h2 {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #666;
-}
-
 p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 23px;
   color: #444;
 }
 
@@ -35,6 +29,27 @@ a {
   &:hover {
     color: #ff3399;
   }
+}
+
+blockquote {
+  font-family: Georgia;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  margin: 30px 0;
+  height: 1px;
+  border: none;
+  background: #eaeaea;
 }
 
 header {
@@ -77,6 +92,15 @@ header {
     font-size: 32px;
   }
 
+  h2 {
+    margin-top: 35px;
+    font-size: 22px;
+    font-family: Dosis, Helvetica, Arial, sans-serif;
+    // border-bottom: 1px solid #eaeaea;
+    // padding-bottom: 10px;
+    // margin-bottom: -4px;
+  }
+
   p {
     margin-top: 22px;
   }
@@ -84,6 +108,24 @@ header {
   img {
     max-width: @width;
     padding-top: 5px;
+  }
+
+  ul {
+    margin-top: 22px;
+    padding-left: 35px
+    list-style: outside disc;
+  }
+
+  ol {
+    margin-top: 22px;
+    padding-left: 38px
+    list-style: outside decimal;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 24px;
+    color: #444;
   }
 }
 
@@ -96,7 +138,10 @@ header {
     margin-bottom: 50px;
 
     h2 {
-      margin-bottom: 27px;
+      margin-bottom: 26px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #666;
     }
 
     li {
@@ -116,11 +161,18 @@ footer {
   font-size: 13px;
 }
 
-code {
-  font-family: monospace;
-  font-size: 12px;
-  line-height: 16px;
+pre {
   margin-top: 22px;
+}
+
+code {
+  font-family: Courier, monospace;
+  font-size: 13px;
+  margin: 0 2px;
+  padding: 0px 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  background-color: #f8f8f8;
 }
 
 @import 'github';
