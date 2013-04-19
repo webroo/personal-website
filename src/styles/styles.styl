@@ -82,6 +82,7 @@ header {
 #main {
   clearfix();
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 #content {
@@ -99,7 +100,7 @@ header {
     // border-bottom: 1px solid #eaeaea;
     // padding-bottom: 10px;
     // margin-bottom: -4px;
-    
+
     &:first-child {
       margin-top: 8px;
     }
@@ -156,8 +157,38 @@ header {
   }
 }
 
+// TODO fix specifity
+#content #articles {
+  margin-top: 11px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 22px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  time {
+    float: left;
+    font-size: 12px;
+    color: #757575;
+    padding-top: 1px;
+  }
+
+  a {
+    display: block;
+    margin-left: 110px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-left: 110px;
+  }
+}
+
 footer {
-  margin-top: 40px;
   padding-top: 28px;
   padding-bottom: 30px;
   border-top: 1px solid #eaeaea;

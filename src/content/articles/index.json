@@ -1,0 +1,6 @@
+{
+  "template": "articles.html",
+  "templateData": {
+    "title": "Articles"
+  }
+}
