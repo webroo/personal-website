@@ -1,0 +1,7 @@
+{
+  "template": "site.html",
+  "templateData": {
+    "title": "Work",
+    "content": "index.md"
+  }
+}

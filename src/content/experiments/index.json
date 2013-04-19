@@ -1,0 +1,7 @@
+{
+  "template": "site.html",
+  "templateData": {
+    "title": "Experiments",
+    "content": "index.md"
+  }
+}
