@@ -1,7 +1,7 @@
 {
   "template": "site.html",
   "templateData": {
-    "title": "Experiments",
+    "siteTitle": "Experiments",
     "content": "index.md"
   }
 }

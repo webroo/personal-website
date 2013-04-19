@@ -1,0 +1,8 @@
+{
+  "template": "article.html",
+  "templateData": {
+    "title": "Lorem ipsum dolor",
+    "date": "2013-04-19",
+    "content": "index.md"
+  }
+}
