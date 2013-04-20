@@ -1,35 +1,12 @@
 {% extends 'site.html' %}
 {% block bodyContent %}
   <ol id="articles">
-    <li>
-      <time>15 May 2012</time>
-      <a href="#">Lorem ipsum dolar</a>
-      <p>Praesent sem urna, fermentum ut fermentum id, aliquet ac elit.</p>
-    </li>
-    <li>
-      <time>05 Mar 2012</time>
-      <a href="#">Vivamus lectus enim cursus</a>
-      <p>Morbi at urna lacus. Ut vel dui mauris, eget suscipit neque.</p>
-    </li>
-    <li>
-      <time>25 Jan 2012</time>
-      <a href="#">Morbi at urna lacus</a>
-      <p>Praesent sem urna, fermentum ut</p>
-    </li>
-    <li>
-      <time>11 Dec 2011</time>
-      <a href="#">Class aptent taciti sociosqu ad litora</a>
-      <p>Vivamus lectus enim, cursus sit amet suscipit eget, euismod quis lacus. Quisque dignissim mattis gravida.</p>
-    </li>
-    <li>
-      <time>30 Nov 2011</time>
-      <a href="#">Aliquet ac elit</a>
-      <p>In convallis, orci in pellentesque pellentesque</p>
-    </li>
-    <li>
-      <time>12 Sep 2011</time>
-      <a href="#">Eleifend sed fermentum quis elit</a>
-      <p>Vivamus augue tellus, eleifend sed fermentum quis, dapibus ut eros. Praesent sem urna, fermentum ut fermentum id, aliquet ac elit.</p>
-    </li>
+    {% for child in pages|matches('prettyUrl','/articles/.+') %}
+      <li>
+        <time>{{ child.templateData.date|date('d M Y') }}</time>
+        <a href="{{ child.prettyUrl }}">{{ child.templateData.title }}</a>
+        <p>{{ child.templateData.title }}</p>
+      </li>
+    {% endfor %}
   </ol>
 {% endblock %}
