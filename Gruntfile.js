@@ -1,7 +1,9 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    clean: ['out/'],
+    clean: {
+      site: ['out/']
+    },
     copy: {
       assets: {
         files: [
@@ -56,6 +58,16 @@ module.exports = function(grunt) {
           base: 'out/'
         }
       }
+    },
+    rsync: {
+      staging: {
+        src: './out/',
+        host: 'webroo.org',
+        dest: '~/staging.webroo.org/',
+        exclude: ['.DS_Store'],
+        syncDest: true,
+        args: ["--archive", "--compress", "--human-readable", "--verbose"]
+      }
     }
   });
 
@@ -65,9 +77,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-haggerston');
+  grunt.loadNpmTasks('grunt-rsync');
 
   grunt.registerTask('build', ['clean', 'copy', 'stylus', 'haggerston']);
   grunt.registerTask('serve', ['build', 'connect', 'watch']);
-  
+  grunt.registerTask('deploy:staging', ['build', 'rsync:staging']);
   grunt.registerTask('default', ['build']);
 };
