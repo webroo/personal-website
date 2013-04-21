@@ -1,6 +1,4 @@
 {
-  "template": "site.html",
-  "templateData": {
-    "content": "index.md"
-  }
+  "template": "home.html",
+  "templateData": {}
 }
