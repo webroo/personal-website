@@ -27,12 +27,10 @@
         <nav>
           <h3>Recent articles</h3>
           <ol>
-            <li><a href="#">Lorem ipsum dolor</a></li>
-            <li><a href="#">Cras vel cursus quam</a></li>
-            <li><a href="#">Phasellus eget dui</a></li>
-            <li><a href="#">Class aptent taciti sociosqu ad litora</a></li>
-            <li><a href="#">Quisque mattis placerat erat</a></li>
-            <li><a href="#">Archive...</a></li>
+            {% for child in pages|getArticles(5) %}
+            <li><a href="{{ child.prettyUrl }}">{{ child.templateData.title }}</a></li>
+            {% endfor %}
+            <li><a href="/articles/">Archive...</a></li>
           </ol>
         </nav>
         <nav>

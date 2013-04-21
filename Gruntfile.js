@@ -27,7 +27,19 @@ module.exports = function(grunt) {
       options: {
         contentPath: 'src/content',
         templatesPath: 'src/templates',
-        dest: 'out'
+        dest: 'out',
+        swigFilters: {
+          getArticles: function(pages, limit) {
+            return pages.filter(function(page) {
+              if (page.prettyUrl.search('/articles/.+') > -1) return true;
+              return false;
+            }).sort(function(a, b) {
+              if (a.templateData.date < b.templateData.date) return 1;
+              if (a.templateData.date > b.templateData.date) return -1;
+              return 0;
+            }).slice(0, limit);
+          }
+        }
       }
     },
     watch: {

@@ -1,12 +1,12 @@
 {% extends 'site.html' %}
 {% block bodyContent %}
   <ol id="articles">
-    {% for child in pages|matches('prettyUrl','/articles/.+') %}
-      <li>
-        <time>{{ child.templateData.date|date('d M Y') }}</time>
-        <a href="{{ child.prettyUrl }}">{{ child.templateData.title }}</a>
-        <p>{{ child.templateData.title }}</p>
-      </li>
-    {% endfor %}
+  {% for child in pages|getArticles %}
+    <li>
+      <time>{{ child.templateData.date|date('d M Y') }}</time>
+      <a href="{{ child.prettyUrl }}">{{ child.templateData.title }}</a>
+      <p>{{ child.templateData.blurb }}</p>
+    </li>
+  {% endfor %}
   </ol>
 {% endblock %}
