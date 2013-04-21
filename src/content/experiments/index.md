@@ -1,4 +1,4 @@
-## Quisque
+# Quisque
 
 ![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)
 
@@ -6,11 +6,11 @@
 
 [Read more](#) or see the source code: http://github.com/webroo
 
-## Ultrices varius turpis
+# Ultrices varius turpis
 
 [Ultrices varius turpis](#) praesent tortor turpis, sollicitudin vel blandit id, commodo sed ante. Curabitur consequat gravida lectus ac condimentum. Mauris ultrices varius turpis sit amet porttitor.
 
-## Consequat
+# Consequat
 
 ![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)
 

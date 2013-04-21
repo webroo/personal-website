@@ -1,4 +1,4 @@
-## Gravida placerat
+# Gravida placerat
 
 [![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)](#)
 
@@ -6,19 +6,19 @@
 
 Sed lobortis enim quis mauris euismod rutrum. Aenean viverra, lacus non pharetra scelerisque, diam ligula rutrum felis, eu rutrum risus risus molestie arcu.
 
-## Tincidunt
+# Tincidunt
 
 [![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)](#)
 
 Sed tincidunt risus at dolor aliquam vitae tristique arcu fringilla. Fusce elementum quam sit amet ante pellentesque id viverra felis adipiscing. Praesent tortor turpis, sollicitudin vel blandit id, commodo sed ante.
 
-## Aenean viverra
+# Aenean viverra
 
 [![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)](#)
 
 Mauris ultrices varius turpis sit amet porttitor. Integer fringilla tristique enim mollis adipiscing. Donec faucibus iaculis massa id sagittis. Sed lobortis enim quis mauris euismod rutrum. Aenean viverra, lacus non pharetra scelerisque, diam ligula rutrum felis, eu rutrum risus risus molestie arcu.
 
-## Etiam fringilla leo
+# Etiam fringilla leo
 
 [![Dummy image](http://dummyimage.com/640x320/eaeaea/cccccc.gif)](#)
 
