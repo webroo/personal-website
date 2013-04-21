@@ -24,7 +24,7 @@
         {% block bodyContent %}{{ content|raw }}{% endblock %}
       </section>
       <aside id="side">
-        <nav>
+        <div>
           <h3>Recent articles</h3>
           <ol>
             {% for child in pages|getArticles(5) %}
@@ -32,14 +32,14 @@
             {% endfor %}
             <li><a href="/articles/">More...</a></li>
           </ol>
-        </nav>
-        <nav>
+        </div>
+        <div>
           <h3>Contact</h3>
           <ul>
             <li><a href="mailto:matt@webroo.org">matt@webroo.org</a></li>
             <li><a href="https://github.com/webroo">github.com/webroo</a></li>
           </ul>
-        </nav>
+        </div>
       </aside>
     </div>
     <footer>Copyright © Matt Sweetman</footer>
