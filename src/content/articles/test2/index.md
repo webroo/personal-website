@@ -1,3 +1,5 @@
+![Dummy image](http://dummyimage.com/640x260/eaeaea/cccccc.gif)
+
 Lorem ipsum dolor sit amet, [consectetur adipiscing](#) elit. Cras vel cursus quam. Suspendisse in ipsum ut quam interdum lacinia ac et tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse elit leo, laoreet vitae blandit et, scelerisque id odio.
 
 ## Fermentum amet
