@@ -76,9 +76,17 @@ module.exports = function(grunt) {
         src: './out/',
         host: 'webroo.org',
         dest: '~/staging.webroo.org/',
-        exclude: ['.DS_Store'],
+        exclude: ['.*'],
         syncDest: true,
-        args: ["--archive", "--compress", "--human-readable", "--verbose"]
+        args: ['--archive', '--compress', '--copy-links']
+      },
+      live: {
+        src: './out/',
+        host: 'webroo.org',
+        dest: '~/webroo.org/',
+        exclude: ['.*'],
+        syncDest: true,
+        args: ['--archive', '--compress', '--copy-links']
       }
     }
   });
@@ -94,5 +102,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['clean', 'copy', 'stylus', 'haggerston']);
   grunt.registerTask('serve', ['build', 'connect', 'watch']);
   grunt.registerTask('deploy:staging', ['build', 'rsync:staging']);
+  grunt.registerTask('deploy:live', ['build', 'rsync:live']);
   grunt.registerTask('default', ['build']);
 };
