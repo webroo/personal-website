@@ -3,6 +3,6 @@
   <article>
     <h1>{{ title }}</h1>
     {{ content|raw }}
-    <time>Published on {{ date|date('d M Y') }}</time>
+    <p><time>Published on {{ date|date('d M Y') }}</time></p>
   </article>
 {% endblock %}
