@@ -1,11 +1,11 @@
 {% extends 'site.html' %}
 {% block bodyContent %}
-  {% for child in pages|getArticles(1) %}
+  {% for child in pages|getArticles(5) %}
   <article>
     <h1>{{ child.templateData.title }}</h1>
     {{ child.templateData.content|raw }}
-    <time>Published on {{ child.templateData.date|date('d M Y') }}</time>
+    <p><time>Published on {{ child.templateData.date|date('d M Y') }}</time></p>
   </article>
+  {% if !loop.last %}<hr>{% endif %}
   {% endfor %}
-  <p><a href="/articles/">More articles...</a></p>
 {% endblock %}
