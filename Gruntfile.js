@@ -97,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-haggerston');
+  grunt.loadNpmTasks('grunt-symlink');
   grunt.loadNpmTasks('grunt-rsync');
 
   grunt.registerTask('build', ['clean', 'copy', 'stylus', 'haggerston']);
