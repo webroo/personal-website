@@ -6,6 +6,7 @@ reset-html5();
 html {
   min-width: 1024px;
   -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -29,8 +30,8 @@ h3 {
 }
 
 p {
-  line-height: 23px;
-  margin-top: 22px;
+  line-height: 1.7em;
+  margin-top: 1.5em;
 }
 
 a {
@@ -71,20 +72,21 @@ header {
   nav {
     border-top: 1px solid #eaeaea;
     border-bottom: 1px solid #eaeaea;
-    line-height: 42px;
     margin-top: 20px;
+  }
 
-    li {
-      display: inline-block;
-      margin-right: 30px;
-    }
+  li {
+    display: inline-block;
+    margin-right: 30px;
+    height: 43px;
+    font-size: 12px;
+    line-height: 44px;
+  }
 
-    a {
-      color: #5e5e5e;
-      font-size: 12px;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
+  a {
+    color: #5e5e5e;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
 
@@ -117,7 +119,7 @@ header {
   }
 
   img {
-    max-width: @width;
+    max-width: 100%;
     display: block;
   }
 
@@ -134,8 +136,7 @@ header {
   }
 
   li {
-    line-height: 24px;
-    color: #444;
+    line-height: 1.7em;
   }
 
   time {
@@ -182,6 +183,9 @@ header {
 
   div {
     margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   h3 {
@@ -191,7 +195,7 @@ header {
   li {
     margin-top: 8px;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.4em;
   }
 }
 
@@ -218,3 +222,83 @@ code {
 }
 
 @import 'github';
+
+@media screen and (max-device-width: 767px) {
+  html {
+    min-width: 480px;
+  }
+
+  body {
+    width: 440px;
+    font-size: 13px;
+  }
+
+  header {
+    margin-top: 20px;
+
+    h1 {
+      font-size: 47px;
+    }
+
+    li {
+      margin-right: 15px;
+      height: 36px;
+      font-size: 10px;
+      line-height: 37px;
+    }
+  }
+
+  #content {
+    float: none;
+    width: 100%;
+    
+    h1 {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    time {
+      font-size: 12px;
+    }
+
+    #articles {
+      a {
+        margin-left: 85px;
+      }
+
+      p {
+        margin-left: 85px;
+      }
+    }
+  }
+
+  #side {
+    float: none;
+    width: 100%;
+    margin-top 30px;
+
+    h3 {
+      font-size: 11px;
+    }
+
+    li {
+      font-size: 12px;
+    }
+  }
+
+  code {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: portrait) {
+  html {
+    min-width: 320px;
+  }
+  body {
+    width: 290px;
+  }
+}
