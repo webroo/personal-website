@@ -42,6 +42,40 @@ module.exports = function(grunt) {
         }
       }
     },
+    symlink: {
+      'whats-that-tag': {
+        dest: 'out/experiments/whats-that-tag',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/whats-that-tag'
+      },
+      '3d-css-helix': {
+        dest: 'out/experiments/3d-css-helix',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/3d-css-helix'
+      },
+      'lattice-of-love': {
+        dest: 'out/experiments/lattice-of-love',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/lattice-of-love'
+      },
+      'tube-threshold': {
+        dest: 'out/experiments/tube-threshold',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/tube-threshold/site'
+      },
+      'tube-proximity': {
+        dest: 'out/experiments/tube-proximity',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/tube-proximity'
+      },
+      'fireflies-processing': {
+        dest: 'out/experiments/fireflies-processing',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/fireflies-processing'
+      },
+      'snowfall-canvas': {
+        dest: 'out/experiments/snowfall-canvas',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/snowfall-canvas'
+      },
+      'snowfall-flash': {
+        dest: 'out/experiments/snowfall-flash',
+        relativeSrc: '/Users/matt/Personal/Projects/Web/snowfall-flash'
+      }
+    },
     watch: {
       haggerston: {
         files: [
@@ -100,7 +134,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-symlink');
   grunt.loadNpmTasks('grunt-rsync');
 
-  grunt.registerTask('build', ['clean', 'copy', 'stylus', 'haggerston']);
+  grunt.registerTask('build', ['clean', 'copy', 'stylus', 'haggerston', 'symlink']);
   grunt.registerTask('serve', ['build', 'connect', 'watch']);
   grunt.registerTask('deploy:staging', ['build', 'rsync:staging']);
   grunt.registerTask('deploy:live', ['build', 'rsync:live']);
