@@ -3,8 +3,10 @@
 global-reset();
 reset-html5();
 
+$siteWidth = 670px;
+
 html {
-  min-width: 1024px;
+  min-width: $siteWidth;
   -webkit-text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -13,7 +15,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #444;
-  width: 950px;
+  width: $siteWidth;
   margin: 0 auto;
 }
 
@@ -66,13 +68,14 @@ header {
   margin-top: 40px;
 
   h1 {
-    font-size: 64px;
+    font-size: 68px;
+    margin-left: -3px;
   }
 
   nav {
     border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
     margin-top: 20px;
+    padding-left: 1px;
   }
 
   li {
@@ -98,11 +101,16 @@ header {
 
 #content {
   float: left;
-  width: 650px;
+  width: $siteWidth;
 
   h1 {
     font-size: 32px;
-    margin-top: 50px;
+    margin-top: 55px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -110,7 +118,7 @@ header {
   }
 
   h2 {
-    margin-top: 40px;
+    margin-top: 1.81em;
     font-size: 22px;
 
     &:first-child {
@@ -145,6 +153,10 @@ header {
     color: #999;
   }
 
+  .moreArticles {
+    margin-top: 3em;
+  }
+
   #articles {
     margin-top: 11px;
     padding: 0;
@@ -173,29 +185,6 @@ header {
       margin-top: 0;
       margin-left: 110px;
     }
-  }
-}
-
-#side {
-  float: right;
-  width: 240px;
-  padding-top: 18px;
-
-  div {
-    margin-bottom: 50px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  h3 {
-    margin-bottom: 22px;
-  }
-
-  li {
-    margin-top: 8px;
-    font-size: 13px;
-    line-height: 1.4em;
   }
 }
 
@@ -233,6 +222,10 @@ code {
     font-size: 13px;
   }
 
+  p {
+    line-height: 1.66em;
+  }
+
   header {
     margin-top: 20px;
 
@@ -241,11 +234,15 @@ code {
     }
 
     li {
-      margin-right: 15px;
+      margin-right: 10px;
       height: 36px;
       font-size: 10px;
       line-height: 37px;
     }
+  }
+
+  #main {
+    margin-top: 35px;
   }
 
   #content {
@@ -265,27 +262,15 @@ code {
     }
 
     #articles {
+      margin-top: 0;
+      
       a {
-        margin-left: 85px;
+        margin-left: 82px;
       }
 
       p {
-        margin-left: 85px;
+        margin-left: 82px;
       }
-    }
-  }
-
-  #side {
-    float: none;
-    width: 100%;
-    margin-top 30px;
-
-    h3 {
-      font-size: 11px;
-    }
-
-    li {
-      font-size: 12px;
     }
   }
 

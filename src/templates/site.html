@@ -16,6 +16,7 @@
           <li><a href="/articles/">Articles</a></li>
           <li><a href="/work/">Work</a></li>
           <li><a href="/experiments/">Experiments</a></li>
+          <li><a href="https://github.com/webroo">Github</a></li>
         </ul>
       </nav>
     </header>
@@ -23,24 +24,6 @@
       <section id="content">
         {% block bodyContent %}{{ content|raw }}{% endblock %}
       </section>
-      <aside id="side">
-        <div>
-          <h3>Recent articles</h3>
-          <ol>
-            {% for child in pages|getArticles(5) %}
-            <li><a href="{{ child.prettyUrl }}">{{ child.templateData.title }}</a></li>
-            {% endfor %}
-            <li><a href="/articles/">More...</a></li>
-          </ol>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="mailto:matt@webroo.org">matt@webroo.org</a></li>
-            <li><a href="https://github.com/webroo">github.com/webroo</a></li>
-          </ul>
-        </div>
-      </aside>
     </div>
     <footer>Copyright © Matt Sweetman</footer>
   </body>
