@@ -1,7 +1,7 @@
 {% extends 'site.html' %}
 {% block bodyContent %}
   <article>
-    <h1>{{ title }}</h1>
+    <h1>{%if page.isDraft %}[DRAFT] {% endif %}{{ title }}</h1>
     {{ content|raw }}
     <p><time>Published on {{ date|date('d M Y') }}</time></p>
   </article>
