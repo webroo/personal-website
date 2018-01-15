@@ -1,24 +1,20 @@
-# webroo.org
+# Personal website
 
-Personal website. Built with Grunt and Haggerston.
-
-Requires Node.js and grunt-cli.
+Statically generated site built with Haggerston.
 
 Run `npm install` after cloning the repository.
+
+To generate the site run:
+
+    npm run build
     
-To generate the site simply run Grunt:
+The site will be generated into a folder called `out`
 
-    grunt
+To serve the site and watch for file changes run:
 
-To serve the site at `http://localhost:8000/` and watch for changed files:
+    npm run serve
 
-    grunt serve
+The site will be available at `http://localhost:8000/`
 
-To rsync the generated site to the remote server:
-
-    grunt deploy:staging
-    grunt deploy:live
-
-====
-    
-Copyright (c) 2013 Matt Sweetman
+--
+Copyright (c) 2018 Matt Sweetman
