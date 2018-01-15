@@ -9,22 +9,25 @@
   </head>
   <body>
     <header>
-      <h1>{% if siteTitle %}{{ siteTitle }}{% else %}Matt Sweetman{% endif %}</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/articles/">Articles</a></li>
-          <li><a href="/work/">Work</a></li>
-          <li><a href="/experiments/">Experiments</a></li>
-          <li><a href="https://github.com/webroo">Github</a></li>
-        </ul>
-      </nav>
+      <div class="central-content">
+        <h2>Matt Sweetman</h2>
+        <h1>{% if siteTitle %}{{ siteTitle }}{% else %}Latest projects{% endif %}</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/experiments/">Experiments</a></li>
+            <li><a href="https://github.com/webroo">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/matt-sweetman-9974203/">Linked In</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div id="main">
-      <section id="content">
-        {% block bodyContent %}{{ content|raw }}{% endblock %}
-      </section>
+    <section id="main" class="central-content">
+      {% block bodyContent %}{{ content|raw }}{% endblock %}
+    </section>
     </div>
-    <footer>Copyright © Matt Sweetman</footer>
+    <footer class="central-content">
+      <div class="copyright">Copyright © Matt Sweetman 2018</div>
+    </footer>
   </body>
 </html>

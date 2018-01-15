@@ -1,9 +1,0 @@
-{
-  "template": "article.html",
-  "templateData": {
-    "title": "Lorem ipsum dolor",
-    "date": "2013-03-15",
-    "blurb": "Praesent sem urna, fermentum ut fermentum id, aliquet ac elit.",
-    "content": "index.md"
-  }
-}

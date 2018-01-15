@@ -1,4 +1,7 @@
 {
-  "template": "home.html",
-  "templateData": {}
+  "template": "site.html",
+  "templateData": {
+    "siteTitle": "Latest projects",
+    "content": "index.md"
+  }
 }

@@ -1,9 +1,0 @@
-{
-  "template": "article.html",
-  "templateData": {
-    "title": "Vivamus lectus enim cursus",
-    "date": "2013-04-10",
-    "blurb": "Morbi at urna lacus. Ut vel dui mauris, eget suscipit neque.",
-    "content": "index.md"
-  }
-}
